@@ -24,7 +24,12 @@
 \usepackage{marginnote}
 \providecommand{\keyterm}[1]{\textbf{#1}\marginnote{\scriptsize \textbf{#1}}}
 
+%% Regex command
+\providecommand{\regex}[1]{\texttt{#1}}
+
 \begin{document}
+
+\epigraph{\itshape "The key to artificial intelligence has always been the representation."}{---Jeff Hawkins}
 
 Some social systems are moving towards other forms of moderation. Another popular choice of moderation is \keyterm{algorithmic moderation}\index{moderation!algorithmic moderation}. This is when moderation is automated; if the service detects bad actions, then it will punish the offending user. Many online video games have some form of algorithmic moderation. For example, in League of Legends, players who frequently leave battles partway through might automatically receive suspensions or even outright bans. To take another example, in many family-oriented video games such as Club Penguin, players who repeatedly attempt to type curse words into the chat are suspended from the game.\index{video games}
 
@@ -39,6 +44,48 @@ However, algorithmic moderation has its drawbacks as well. Because there is no, 
 \section{Natural language processing}
 
 \subsection{Regular expressions}
+
+\keyterm{Regular expressions} are frequently used to match patterns in a target string. They are so ubiquitous that nearly every programming language provides support for them. They are frequently used to process and verify input text. For example, an email authenticator might use a regular expression to first check that the inputted string is a well-formed email before doing anything else.
+
+We will begin by discussing some basic \keyterm{pattern matching} properties and operations that can be performed with regular expressions. For example, suppose we want to match the string "ricky". The simplest regular expression we could use to match this would simply be \regex{ricky}. Or if we want to match the string "apple" then we would use the regular expression \regex{apple}. Take note that regular expressions are \keyterm{case-sensitive}. So the regex \regex{apple} will match "apple" but not "Apple", "APPLE" or "aPpLe". Straightforward enough so far.
+
+Now, suppose we want to match any string in a set of strings. For example, suppose we want to match "apple", "banana" or "pear". Then we can use the \keyterm{disjunction} operator \regex{|} -- a vertical bar. We separate the strings in our set with the disjunction operator. For example, to match "apple", "banana" or "pear", we would use the regular expression \regex{apple|banana|pear}.
+
+There are many common disjunction operations which would be tedious to write out in full. For example, suppose we want to match any alphabetical letter. We can use a \keyterm{range} to concisely specify this disjunction. For example, we represent uppercase letters with the range \regex{[A-Z]}. Note the inclusion of square brackets \regex{[} and \regex{]} around the range. Some common ranges are listed below.
+\begin{center}
+    Uppercase letters: \regex{[A-Z]}\\
+    Lowercase letters: \regex{[a-z]}\\
+    Numerical digits: \regex{[0-9]}
+\end{center}
+The use of square brackets are commonly used to specify single character disjunctions concisely. For example, suppose we want to match either "grey" or "gray". We could write the regex \regex{grey|gray} but this is kind of long. We can more concisely specify this regex using square bracket notation: \regex{gr[ea]y}. Essentially, this means that when pattern matching to this regex, the third character can be either 'e' or 'a'. This notation is frequently used because it is extensible; suppose we want to also match variants of "grey" and "gray" that are uppercase. We can accomplish this through a simple modification of our regular expression: \regex{[gG]r[eA]y}.
+
+Another disjunction shortcut is the \keyterm{negation} operator \regex{\^{}} -- the caret symbol. If we include this operator within closed brackets at the beginning then our regex will match any characters that are \textbf{not} in our specified disjunction. For example, the regex \regex{[\^{}abc]} matches any character that is not 'a', 'b' or 'c'. The regex \regex{[\^{}0-9]} matches any character that is not a numerical digit.
+
+Another tool at our disposal is \keyterm{quantifiers}, which are operators that match a certain number of the previous element. The most basic quantifier is the \keyterm{Kleene star}, which matches zero or more of the previous element. The Kleene star is represented by the symbol * -- the asterisk. For example, the regex \regex{a*} matches the strings "" (also known as the \keyterm{empty string}), "a", "aa", "aaa", "aaaa" and so on.
+
+A commonly used variant of the Kleene star is the \keyterm{Kleene plus}, which matches one or more of the previous element. The Kleene plus is represented by the symbol + -- the plus sign. For example, the regex \regex{a+} matches the strings "a", "aa", "aaa", "aaaa" and so on. Note that the only difference between the Kleene star and the Kleene plus is that the Kleene plus does not match the empty string.
+
+We can also use the question mark symbol '?' to represent an \keyterm{optional} element. For example, the regex \regex{a?} matches two strings: the empty string "" and the string "a". The regex \regex{Ricky?} matches both "Rick" and "Ricky".
+
+We can specify more fine-grained quantifiers as well by using curly brackets \regex{\{} and \regex{\}}. The syntax \regex{\{n\}} matches n occurrences of the previous element. The syntax \regex{\{min,\}} matches at least min occurrences of the previous element. The syntax \regex{\{,max\}} matches at most max occurrences of the previous element. The syntax \regex{\{min,max\}} matches at least min and at most max occurrences of the previous element. Here are some examples:
+\begin{center}
+    \regex{a\{3\}} matches "aaa"\\
+    \regex{a\{3,\}} matches "aaa", "aaaa", "aaaaa" and so on\\
+    \regex{a\{,3\}} matches "", "a", "aa" and "aaa"\\
+    \regex{a\{3,4\}} matches "aaa" and "aaaa"
+\end{center}
+
+wildcards
+
+anchors
+
+operator precedence / parentheses
+
+alises for common ranges
+
+special characters
+
+capture groups
 
 \section{Automod}
 

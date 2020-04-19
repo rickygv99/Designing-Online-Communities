@@ -1,0 +1,72 @@
+\documentclass[class=book, crop=false]{standalone}
+
+%% Image paths
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Sets epigraph style
+\usepackage{epigraph}
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
+%% Sets line style
+\linespread{1.3}
+
+%% Key term command
+\usepackage{marginnote}
+\providecommand{\keyterm}[1]{\textbf{#1}\marginnote{\scriptsize \textbf{#1}}}
+
+\begin{document}
+
+When joining a new social system, users don’t have much incentive to use the system if their friends aren’t on it. This is a classic “chicken and the egg” problem -- you can’t make a useful social system without users but to get users you need a useful social system. In traditional entrepreneurship literature, this is referred to as the \keyterm{cold start problem}\index{cold start problem}.\footnote{There are varying definitions of the cold start problem but they all revolve around the idea that many systems aren’t initially useful, and therefore are not enticing to users, because they either don’t have enough users or don’t have enough information about new users.}
+
+To overcome the cold start problem, you need to figure out a way to get users to keep using the social system even if there are few users initially.
+
+\section{Niche markets}
+
+One way you could do this is by marketing your social system to a small yet closely connected group. If you get this group of users to join, then even though there are few of them, they know lots of others on the system and so they have a much higher probability of continuing to use the social system. You can then get more such groups to join the system until you have a sizeable amount of people using the system.
+
+This is what Facebook\index{Facebook} did -- initially it required new users to have a harvard.edu email address and marketed solely towards Harvard students. Students joined because they knew other people on the system and Facebook quickly dominated the Harvard campus. It then expanded to other colleges, getting all of their students to join, before it opened to the general public.
+
+\section{Bootstrapping}
+
+Another way you can overcome the cold start problem is by \keyterm{bootstrapping}\index{bootstrapping} your social system in its initial stages. This is when you manually engage with early users in order to keep them on the system long enough for more users to join. For example, both Quora\index{Quora} and StackOverflow\index{StackExchange}’s owners manually responded to early users’ questions in order to keep them using their sites. They kept responding until enough contributing users joined so that their systems were self-sustainable.
+
+Sometimes, social system founders will post fake content on their sites in order to give the impression of a larger community than exists at first. For example, the founders of Reddit\index{Reddit} made fake Reddit accounts and generated fake conversations between them [Krishnan 2012]. Because new users felt that they were part of a larger community, instead of a small one which could fizzle out, they were more willing to invest time in it.
+
+\section{Shareability}
+How do you reach new users? There's always paid methods such as advertisements, paying bloggers to review your product, and so on. However, the best method for reaching new users has always been \keyterm{word of mouth}\index{word of mouth}.
+
+When designing a social system, you need to allow content from the system to reach beyond the system itself. What does this mean? Simply put, if I want to share a tweet with my friends, I should be able to share it with them even if they don't have Twitter\index{Twitter}. By seeing the content and seeing that it came from Twitter, they are more likely to get a Twitter account themselves.
+
+How do you implement this? The most easy way is to give every piece of content its own \keyterm{URL}\index{URL}. Allow users to easily copy or email the URL, such as through a prominent "Copy" or "Share" button.
+
+\section{Lurkers and contributors}
+
+\section{Reading questions}
+
+\section{Solutions to reading questions}
+
+\section{Bibliography}
+
+Burke, Moira et al. "Feed me: motivating newcomer contribution in social network sites." Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, pp. 945-954. April 4 - 9, 2009.
+
+Enders, Albrecht et al. "The long tail of social networking: Revenue models of social networking sites." European Management Journal 26 (3): pp. 199 - 211. June, 2008.
+
+Krishnan, Sriram. "Unconventional Ways Startups Tackle the Cold Start Problem." Forbes. October 24, 2012.
+
+Lin, Hui et al. "Determinants of users' continuance of social networking sites: A self-regulation perspective." Information \& Management 51 (5): 595-603. July, 2014.
+
+Mislove, Alan et al. "Growth of the flickr social network." Proceedings of WOSN 2008, pp. 25-30. August 18, 2008.
+
+Xu, Yunjie et al. "Retaining and attracting users in social networking services: An empirical investigation of cyber migration." The Journal of Strategic Information Systems 23 (3): pp. 239-253. September, 2014.
+
+\end{document}

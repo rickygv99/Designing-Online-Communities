@@ -1,0 +1,164 @@
+\documentclass[class=book, crop=false]{standalone}
+
+%% Image paths
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Sets epigraph style
+\usepackage{epigraph}
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
+%% Sets line style
+\linespread{1.3}
+
+%% Key term command
+\usepackage{marginnote}
+\providecommand{\keyterm}[1]{\textbf{#1}\marginnote{\scriptsize \textbf{#1}}}
+
+\begin{document}
+
+Some social systems are moving towards other forms of moderation. Another popular choice of moderation is \keyterm{algorithmic moderation}\index{moderation!algorithmic moderation}. This is when moderation is automated; if the service detects bad actions, then it will punish the offending user. Many online video games have some form of algorithmic moderation. For example, in League of Legends, players who frequently leave battles partway through might automatically receive suspensions or even outright bans. To take another example, in many family-oriented video games such as Club Penguin, players who repeatedly attempt to type curse words into the chat are suspended from the game.\index{video games}
+
+Social media and content sharing sites also use algorithmic moderation. For example, Twitter\index{Twitter} and YouTube\index{YouTube} have artificial intelligence algorithms that detect illicit behavior and graphic violence in videos posted on their sites and automatically report or remove the videos and punish the offending users.
+
+Algorithmic moderation\index{moderation!algorithmic moderation} has some benefits over commercial content moderation\index{moderation!commercial content moderation}. It doesn't require the social system to continually pay as many moderators (they only need moderators to review uncertain reports) and, consequently, it exposes less moderators to psychologically dangerous working conditions.\index{secondary traumatic-stress disorder}
+
+However, algorithmic moderation has its drawbacks as well. Because there is no, or at least a reduced, human presence in deciding what constitutes an offense, sometimes algorithmic moderation can make mistakes. When users are punished despite not having committed an offense, they might become angry and spur others to become angry at the social system.
+
+\section{Introduction to machine learning}
+
+\section{Natural language processing}
+
+\subsection{Regular expressions}
+
+\section{Automod}
+
+Automod [Jhaver, Shagun et al. 2019]
+
+\section{Participatory method design}
+
+Crossmod (participatory method design) [Chandrasekharan, Eshwar et al. 2019]
+
+\section{Bots}
+
+Artificial intelligence chatbots\index{chatbot}, or \keyterm{bots}, are gaining an increasing presence in the digital space. Moderator\index{moderation} bots patrol Reddit\index{Reddit}, deleting spam comments and posting supplementary links to improve the quality of conversations. Bots with differing levels of ill intentions frequent social media sites such as Facebook and Twitter, alternately propping up political candidates or trying to sell your grandparents "prime real estate" in the Florida Everglades.
+
+As the quality of chatbots improves, it's not hard to imagine them coming to amass a real digital identity. These \keyterm{socialbots}\index{chatbot} are impersonating humans with more and more success. In one famous case, in 2013, a bot pretending to be a journalist named Carina Santos which was created by computer scientists at the Federal University of Ouro Preto was considered by ranking site Twitalyzer to have more online influence than Oprah Winfrey [Urbina 2013].
+
+The first chatbot\index{chatbot} was developed in 1966 by Joseph Weizenbaum, a professor at the Massachusetts Institute of Technology. The chatbot, named \keyterm{ELIZA}\index{ELIZA}, impersonated a Rogerian psychotherapist. Rogerian psychotherapists act as if they know nothing about their patients' contexts and tend to respond in the form of questions which often restate part or all of what the patient said. For example, if a patient says "My father hates me," then a Rogerian psychotherapist might respond "Why do you think your father hates you?" By decomposing its patients' statements into its constituent parts and making word and phrase swaps according to predefined rules, ELIZA was able to successfully impersonate a Rogerian psychotherapist.
+
+We believe that about 10-15\% of Twitter\index{Twitter} accounts are social bots\index{chatbot}. [Varol et al. 2017] These bots produce about 20\% of the conversation on political topics. [Bessi and Ferrara 2016]\\
+
+Three criteria can indicate that a Twitter account might actually be a bot: periodic and regular timing of tweets, whether the tweet contains known spam, and the ratio of tweets from mobile versus desktop as compared to an average human Twitter user. [Chu et al. 2012]\\
+
+Humans can view Twitter bots as a credible source of information. [Edwards et al. 2014]\\
+
+Alan Turing and the \keyterm{Turing test}\index{Turing test}\\
+Turing test transcripts: https://www.coventry.ac.uk/primary-news/turing-test-transcripts-reveal-how-chatbot-eugene-duped-the-judges/
+
+CAPTCHAs
+
+Political bots\\
+
+Marketing bots\\
+
+Porn bots\\
+
+Customer service bots
+
+\section{Algorithmic biases against minorities}
+
+Furthermore, algorithmic moderation\index{moderation!algorithmic moderation} often relies in large part on \keyterm{machine learning}\index{machine learning}, which relies on collecting data of offensive behaviors from its user-base. However, if the social system's users frequently report a minority's behaviors as offensive, despite the behaviors not actually being objectively offensive, then the social system's machine learning algorithms might learn that the minority's behaviors are offensive and therefore punishable. For example, anti-LGBTQ+ discrimination\index{discrimination} has in many cases tricked algorithmic moderation to unfairly target the LGBTQ+ community. One study found that algorithmic moderation was over twice as likely to flag tweets written in the African American English dialect [Sap et al. 2019].
+
+Algorithmic moderation\index{moderation!algorithmic moderation} has also proven to be susceptible to influence by malicious actors\index{troll}. In 2012, leaders of Mexico's Institional Revolutionary Party, the dominant party in Mexico, took advantage of a machine learning\index{machine learning} spam filter on Twitter\index{Twitter} to silence their opposition. When members of their opposition tweeted, the party members would tweet out thousands of identical tweets with the same hashtags. This caused Twitter's machine learning algorithm to associate the opposition's tweets with spam and block the tweets. [Urbina 2013]
+
+Algorithmic bias is a huge problem in machine learning, as machine learning algorithms that are poorly designed or trained on unrepresentative or racist, sexist, etc. datasets may behave in inappropriate ways. Sometimes, these algorithms can have real-world effects, with racist profiling, court verdicts and so on.
+
+For example, in 2016, it was found that LinkedIn had a tendency to autocorrect female names to male names, asking users if they meant to type "Andrew" instead of "Andrea" for example. To take other examples, it recommended "Daniel" instead of "Danielle", "Michael" instead of "Michaela" and "Alex" instead of "Alexa". Similar searches for male names found no instances where LinkedIn's algorithm recommended female names in place of male names. This is a good example of how algorithms which are trained on typical user actions can come to bias against minorities. As LinkedIn spokeswoman Suzi Owens said in response, "It's all based on how people are using the platform." [Day 2016]
+
+To take another example, company Northpointe developed a risk assessment algorithm, which was designed to receive data about criminal offenders and determine how at risk the offenders were of committing another crime in the future. The algorithm was shown to rate black offenders as significantly more high risk of committing a repeat crime in the future than white offenders. The bias of the algorithm is particularly horrifying because courts used the algorithm to help determine sentencing for criminal offenders. In short, black offenders tended to receive longer sentences than white offenders for committing the exact same crime! [Angwin et al. 2016]
+
+\section{Invisible algorithms and transparency}
+
+Algorithms govern a large portion of our online lives. In online social systems, they determine what content we see, which friends are recommended to us and how we fundamentally interact with the systems. However, we don't often see how the algorithms actually function -- what parameters they consider, when they're there, and so on. They are a black box which spits out some results for some unknown reason. Invisible algorithms can lead to bias against minorities without them realizing the algorithms are doing so. It is imperative that, in the 21st century, algorithms become transparent so that any user can learn why a program is showing them some pieces of content and not others.
+
+Consider the Facebook News Feed for example. In one recent study of 40 Facebook users, researchers found that over half of them didn't know that Facebook was curating what content they were shown. "So do they actually hide these things from me? Heeeeeeey! I never knew that Facebook really hid something!" said one participant. Another participant said "It's kind of intense, it's kind of waking up in 'the Matrix' in a way. I mean you have what you think as your reality of like what they choose to show you. [...] So you think about how much, kind of, control they have...". [Eslami et al. 2015]
+
+The Facebook News Feed shows content that it thinks users will engage with and hides content that it thinks users won't engage with. This led some participants to think that some friends stopped posting on Facebook; however, they found out from the study that their friends were still active on Facebook. One participant said about one friend, "I know she had some family issues so I just thought she deactivated her account." As one participant said, "It was sort of like someone was deciding what I wanted to see and it kind of made me mad." [Eslami et al. 2015]
+
+The study further found that, although many participants were initially incensed at Facebook for manipulating their news feeds, most came to appreciate the algorithm for giving them content they liked to interact with. "A lot of what is filtered out are things that don't really pertain to me. I'm so grateful because, otherwise, it would just clutter up what I really want to see," said one participant. [Eslami et al. 2015] Many online social systems such as Facebook may not want to reveal how their invisible algorithms or working or even to help people understand that these algorithms exist at all. Perhaps this is out of fear that users will become mad and leave their service. However, this study seems to imply that many users appreciate these algorithms and, furthermore, appreciate the transparency that knowing about the algorithms provides.
+
+Most users warmed to the invisible algorithm underlying Facebook's News Feed because they felt that the algorithm was only trying to help them, even if it was not transparent about doing so. However, when invisible algorithms are misused so that users feel manipulated for no positive benefit, they can become angry. In one famous 2014 study, a research team used the Facebook News Feed to test whether emotional contagion, the person-to-person spread of emotional state, could occur on Facebook. The team manipulated the content shown on users' News Feeds, showing some users fewer positive posts than usual and showing some users fewer negative posts than usual. The team found that users who saw fewer positive posts tended to write more negative posts and, similarly, users who saw fewer negative posts tended to write more positive posts. [Kramer et al. 2014]
+
+Many users were angry that Facebook manipulated their emotions without their knowing. Article after article appeared on different websites detailing "Facebook's Secret Mood Manipulation Experiment". Users complained en masse. For example, technologist Clay Johnson tweeted "In the wake of both the Snowden stuff and the Cuba twitter stuff, the Facebook 'transission of anger' experiment is terrifying." To take another example, user Erin Kissane, tweeted "Get off Facebook. Get your family off Facebook. If you work there, quit. They're f*cking awful." The articles popping up all over the Internet questioned both the legality and the ethics of the Facebook experiment. The lead author of the research study, Adam D. I. Kramer, responded to criticism, saying "Having written and designed this experiment myself, I can tell you that our goal was never to upset anyone. [...] In hindsight, the research benefits of the paper may not have justified all of this anxiety." [Meyer 2014].
+
+\section{Replicant effect and humanness}
+
+When the environment is all-AI or all-human, people rate the content as trustworthy -- or at least calibrate their trust. However, when the environment is a mix of AI and human actors and you can’t tell them apart, the content believed to be from AIs is trusted far less. This phenomenon is known as the \keyterm{Replicant Effect}\footnote{Also known as the \textit{uncanny valley theory}}\index{Replicant Effect}, after the film series \textit{Blade Runner}. [Jakesch et al. 2019]
+
+"If you look humanlike but your motion is jerky or you can't make proper eye contact, those are the things that make them uncanny. I think the key is that when you make appearances humanlike, you raise expectations for the brain. When those expectations are not met, then you have the problem in the brain," says Ayse Saygin, a cognitive scientist at the University of California, San Diego [Hsu 2012].
+
+Replicant effect and generational effects [Newitz 2013]
+
+\section{Reading questions}
+
+\section{Solutions to reading questions}
+
+\section{Bibliography}
+
+Angwin, Julia et al. "Machine Bias: There's software used across the country to predict future criminals. And it's biased against blacks." ProPublica. May 23, 2016.
+
+Bessi, Alessandro and Ferrara, Emilio. "Social Bots Distort the 2016 US Presidential Election Online Discussion." First Monday, 22.11. November 7, 2016.
+
+Chandrasekharan, Eshwar et al. "Crossmod: A Cross-Community Learning-Based System to Assist Reddit Moderators." Proc. ACM Hum.-Comput. Inteeract. x, CSCW, Article x. November, 2019.
+
+Chu, Zi et al. "Detecting Automation of Twitter Accounts: Are You a Human, Bot, or Cyborg?" IEEE Transactions on Dependable and Secure Computing 9.6. August 23, 2012.
+
+Day, Matt. "How LinkedIn's search engine may reflect a gender bias." The Seattle Times. August 31, 2016.
+
+Edwards, Chad et al. "Is that a bot running the social media feed? Testing the differences in perceptions of communication quality for a human agent and a bot agent on Twitter." Computers in Human Behavior 33. p. 372-376. April, 2014.
+
+Epp, Len. "Five Potential Malicious Uses For Chatbots." Medium. May 10, 2016.
+
+Eslami, Motahhare et al. "'I always assumed that I wasn't really that close to [her]': Reasoning about Invisible Algorithms in News Feeds." CHI 2015. April 18 - 23, 2015.
+
+Gaylord, Chris. "Uncanny Valley: Will we ever learn to live with artificial humans?" The Christian Science Monitor. September 14, 2011.
+
+Grudin, Jonathan and Jacques, Richard. "Chatbots, Humbots, and the Quest for Artificial General Intelligence." CHI 2019. May 4-9, 2019.
+
+Hsu, Jeremy. "Why 'Uncanny Valley' Human Look-Alikes Put Us on Edge." Scientific American. April 3, 2012.
+
+Jakesch, Maurice et al. "AI-Mediated Communication: How the Perception that Profile Text was Written by AI Affects Trustworthiness." CHI Conference on Human Factors in Computing Systems Proceedings. May 4 - 9, 2019.
+
+Jhaver, Shagun et al. "Human-Machine Collaboration for Content Regulation: The Case of Reddit Automoderator." ACM Trans. Comput.-Hum. Interact. 25, 5, Article 31. July, 2019.
+
+Kramer, Adam D. I. et al. "Experimental evidence of massive-scale emotional contagion through social networks." Proceedings of the National Academy of Sciences. 111 (24). June, 2014.
+
+Meyer, Robinson. "Everything We Know About Facebook's Secret Mood Manipulation Experiment." The Atlantic. June 28, 2014.
+
+Newitz, Annalee. "Is the 'uncanny valley' a myth?" Gizmodo. September 3, 2013.
+
+Sap, Maarten et al. "The Risk of Racial Bias in Hate Speech Detection." Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, p. 1668-1678. July 28 - August 2, 2019.
+
+Saygin, Ayse Pinar et al. "The thing that should not be: predictive coding and the uncanny valley in perceiving human and humanoid robot actions." Social Cognitive and Affective Neuroscience. 7 (4): 413-422. April 22, 2011.
+
+Turing, A. M. "Computing Machinery and Intelligence." Mind 49, p. 433-460. 1950.
+
+Urbina, Ian. "I Flirt and Tweet. Follow Me at \#Socialbot." The New York Times. August 10, 2013.
+
+Varol, Onur et al. "Online Human-Bot Interactions: Detection, Estimation, and Characterization." International Conference on Web and Social Media 2017. March, 2017.
+
+Wagner, Meg. "This virtual politician wants to run for office." CNN. November 23, 2017.
+
+Weizenbaum, Joseph. "ELIZA -- A Computer Program For the Study of Natural Language Communication Between Man And Machine." Communications of the ACM. 9.1. January, 1966.
+
+\end{document}

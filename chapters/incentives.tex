@@ -1,0 +1,136 @@
+\documentclass[class=book, crop=false]{standalone}
+
+%% Image paths
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Sets epigraph style
+\usepackage{epigraph}
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
+%% Sets line style
+\linespread{1.3}
+
+%% Info boxes
+\usepackage[framemethod=tikz]{mdframed}
+\mdfdefinestyle{mystyle}{%
+  rightline=true,
+  innerleftmargin=10,
+  innerrightmargin=10,
+  outerlinewidth=3pt,
+  topline=false,
+  rightline=true,
+  bottomline=false,
+  skipabove=\topsep,
+  skipbelow=\topsep
+}
+
+%% Key term command
+\usepackage{marginnote}
+\providecommand{\keyterm}[1]{\textbf{#1}\marginnote{\scriptsize \textbf{#1}}}
+
+\begin{document}
+
+Consider two different types of online communities. Community A has a lot of users but almost nobody participates. Community B is smaller than Community A but many of its users participate regularly -- ultimately, it has more participants than Community A despite having less users. Which community would you rather have?
+
+The choice is easy -- Community B. Having a lot of non-functional users is just a list of names -- not useful. A community isn't made up of its users; it's made up of its \textit{participating} users. Yet a lot of online communities tend to become Community As instead of Community Bs. These communities are \keyterm{ghost towns} -- practically dead for all intents and purposes. So how do we make sure our community becomes a Community B and not a Community A?
+
+One key difference separates Community As from Community Bs. Participants in Community Bs are \textit{incentivized} in some way (often multiple ways) to participate. In this chapter, we will learn all about how to properly incentivize users to make helpful contributions to our communities.
+
+\section{Sources of motivation}
+
+There are two primary ways we can motivate users to participate in our communities. One way is to make the participating in the community intrinsically valuable for them. For example, someone might participate in a Dungeons and Dragons community because they find it fun. This is called \keyterm{intrinsic motivation}.
+
+\keyterm{Extrinisic motivation}, on the other hand, is when users participate in your community because they want to get something else out of it. For example, a user might participate in a user research community because they get paid for doing so. Or they might join an educational community so they can study and boost their grades.
+
+Sources of intrinsic motivation are typically preferable to sources of extrinsic motivation. If a user no longer needs money or doesn't have time to earn extra money, the user might leave the user research community. Or if the user finishes their class (or masters or stops caring about the material), the user might leave the educational community. This is the pitfall of extrinsic motivation -- it is typically temporary. However, this doesn't mean that we shouldn't have sources of extrinsic motivation. Extrinsic motivation is often necessary to get users to take note of a community in the first place. Extrinsic motivation is especially important when starting a new community. And even if you have an established community, extrinsic motivation can provide the extra nudge that keeps users engaged and further motivates already-engaged users.
+
+\begin{mdframed}[style=mystyle,frametitle=Recognizing Sources of Motivation in Your Community]
+Many communities only have sources of intrinsic motivation or sources of extrinsic motivation but not both. (The same communities usually also have only one or two sources of motivation -- they should get more!) When you consider how you want to keep users motivated to participate in your community, you should make a list of all the sources of motivation your community has. You should then note which ones are extrinsic and which ones are intrinsic. If you find you have too many of one and not enough of the other (as is often the case) you can then make adjustments as necessary.
+\end{mdframed}
+
+Adolescents are motivated to express themselves and receive positive feedback [Choi and Toma 2014]. Many social systems are specifically designed to facilitate this. For example, adolescents are driven to use social media so that they can express their personalities and share their lives to their friends.
+
+Adolescents, furthermore, hope to receive positive feedback in return from friends. In fact, there is a correlation between the number of likes\index{Facebook!likes} that people get on their Facebook posts and their self-esteem [Burrow and Rainone 2017]. Most social media sites and apps (with a couple notable exceptions such as YouTube) facilitate this by allowing users to up-vote others' posts but, importantly, not down-vote them. For example, Facebook has a Like button but no Dislike button.\footnote{There's actually a movement underway right now to get Facebook to add a Dislike button.}
+
+The biggest reason many users use social media is because they want validation of their popularity [Utz et al. 2011; Throuvala, Melina A. et al. 2019].
+
+Furthermore, adolescents are driven to use social systems because they don't want to miss out on social interactions with peers.\footnote{Commonly called \textit{FOMO}} Many social media sites and apps facilitate this by pushing notifications to users telling them about friends' life updates, messages and reactions.
+
+The ethics of psychologically pushing users to use social media sites has come under scrutiny in recent years. When social media sites lead users to fear they are missing out, many users end up developing addictions to the social media apps [Pontes, Taylor and Stavropoulos 2018]. This can lead users to develop self-esteem issues, which can lead to them using social media more, and so on in a negative feedback loop. [Buglass et al. 2017; Throuvala, Melina A. et al. 2019]
+
+\section{Channel factors}
+
+It's not enough to simply \textit{have} some sources of motivation. How you \textit{communicate} your sources of motivation to users is just as, if not even more, important.
+
+In 1965, Yale professors Howard Leventhal, Robert Singer and Susan Jones tested whether providing specifics about an action made participants more likely to undertake the action. In their experiment, they recommended getting a tetanus shot to university students who weren't already inoculated. They then provided them with a pamphlet with information about why they should get a tetanus shot. In some of the pamphlets handed out were more detailed instructions about how to get a tetanus shot, including the hours of the university health center and a circle on the provided map indicating where the university health center was.
+
+The researchers found that students who had received the more detailed pamphlets were significantly more likely to get a tetanus shot than students who had received the normal pamphlets. Interestingly, it wasn't that the students didn't know the extra information provided -- the researchers found that most of the students already knew the information. Instead, the simple guide of receiving specific instructions motivated students to act more.
+
+This type of motivating guide is called a \keyterm{channel factor}\index{channel factor}. Channel factors are small cues that encourage us to actually follow through with our intended plans. Rather than simply telling us how easy undertaking an action is, they \textit{show} us.
+
+There are many ways you can leverage channel factors in motivating users to participate in your online community. For example, if you want users to comment more, you might provide pictorial instructions showing step-by-step how users can comment. Or maybe you could provide an example comment to remove any uncertainty they might have about what their comment should look like.
+
+\section{Active participation}
+
+\keyterm{Social loafing}\index{social loafing} -- when others are working with us, we work less
+\begin{itemize}
+    \item Experiment: Participants were blindfolded and told to play team tug-of-war. However, there was actually nobody else on their team. They pulled 18\% harder when told they were the only one on their team versus when they thought there were 2-5 others. [Ingham 1974]
+    \item You can get people to contribute more effectively by calling out the person’s uniqueness and helping them set goals instead of shaming or nudging them. [Kraut and Resnick 2012]
+\end{itemize}
+
+\keyterm{Reciprocity}\index{reciprocity}
+\begin{itemize}
+    \item Experiment: Participants’ partners left and some came back with sodas as gifts. Participants who received sodas later bought more raffle tickets for their partners. [Regan 1971]
+    \item If someone does something to another person, whether positive or negative, then the other person is likely to reciprocate in a greater amount. [Fehr and Gachter 2000]
+    \item One way we can leverage the idea of reciprocity\index{reciprocity} is by asking users to make a greater-value contribution to the social system than we expect them to make. Then, when they turn down the greater-value contribution, we present them with a smaller-value one. As we have made a concession to the user, they feel more obligated to make a concession to us in turn. [Fehr and Gachter 2000] However, we must be careful to not over-ask of the user. Otherwise, they won't feel that the concession is genuine and won't feel a need to reciprocate. [Pascual and Gueguen 2005]
+\end{itemize}
+
+\section{Reputation systems}
+
+Resnick, Zeckhauser, Swanson, and Lockwood: The Value of Reputation on eBay: A Controlled Experiment\\
+
+Resnick and Friedman: The Social Cost of Cheap Pseudonyms\\
+
+https://onezero.medium.com/the-illinois-artist-behind-social-medias-latest-big-idea-3aa657e47f30
+
+\section{Reading questions}
+
+\section{Solutions to reading questions}
+
+\section{Bibliography}
+
+Buglass, S. L. et al. "Motivators of online vulnerability: The impact of social network site use and FOMO." Computers in Human Behavior. 66:248-255. 2017.
+
+Burrow, A. L. and Rainone, N. "How many likes did I get?: Purpose moderates links between positive social media feedback and self-esteem." Journal of Experimental Social Psychology. 69:232-236. 2017.
+
+Choi, M. and Toma, C. L. "Social sharing through interpersonal media." Computers in Human Behavior. 34:530-541. 2014.
+
+Fehr, Ernst and Gachter, Simon. "Fairness and Retaliation: The Economics of Reciprocity." The Journal of Economic Perspectives. 14(3):159-181. January 1, 2000.
+
+Gilbert, Eric. "Widespread Underprovision on Reddit." CSCW 2013. February 23 - 27, 2013.
+
+Leventhal, Howard et al. "Effects of Fear and Specificity of Recommendation Upon Attitudes and Behavior." Journal of Personality and Social Psychology 2(1):20-29. 1965.
+
+Ling, Kimberly et al. "Using Social Psychology to Motivate Contributions to Online Communities." Journal of Computer-Mediated Communication. 10(4). June 23, 2006.
+
+Pascual, Alexandre and Gueguen, Nicolas. "Foot-in-the-door and door-in-the-face: a comparative meta-analytic study." Psychological Reports. 96(1):122-128. February 1, 2005.
+
+Pontes, H. M. M. and Stavropoulos, Taylor M. "Beyond 'Facebook addiction': The role of cognitive-related factors and psychiatric distress in social networking site addiction." Cyberpsychology, Behavior, and Social Networking. 21(4):240-247. 2018.
+
+Ryan, Richard M. and Deci, Edward L. "Intrinsic and Extrinsic Motivations: Classic Definitions and New Directions." Contemporary Educational Psychology. 25(1):54-67. 2000.
+
+Throuvala, Melina A. et al. "Motivational processes and dysfunctional mechanisms of social media use among adolescents: A qualitative focus group study." Computers in Human Behavior. 93:164-175. April, 2019.
+
+Utz, S. et al. "It is all about being popular: The effects of need for popularity on social network site use." Cyberpsychology, Behavior, and Social Networking. 15(1):37-42. 2011.
+
+\end{document}

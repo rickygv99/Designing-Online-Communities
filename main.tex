@@ -1,0 +1,75 @@
+\documentclass[a4paper, 12pt, oneside]{book}
+
+%% Standalone file compilation
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{marginnote}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[colorlinks=true, allcolors=blue, breaklinks]{hyperref}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{csquotes}
+
+%% Makes index
+\usepackage{imakeidx}
+\makeindex
+
+%% Only show parts, chapters, and sections in table of contents
+\setcounter{tocdepth}{1}
+
+\title{Designing Online Communities}
+\author{Ricky Grannis-Vu\\B.S. Candidate in Computer Science\\\textit{Stanford University}}
+\date{Copyright \textcopyright 2020}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents{}
+
+\chapter{Introduction}
+\import{chapters/}{introduction}
+
+\chapter{Attracting Users}
+\import{chapters/}{attracting_users}
+
+\chapter{Establishing Norms}
+\import{chapters/}{norms}
+
+\chapter{Incentives}
+\import{chapters/}{incentives}
+
+\chapter{Collaboration}
+\import{chapters/}{collaboration}
+
+\chapter{Online Abuse}
+\import{chapters/}{abuses}
+
+\chapter{Causes of Online Abuse}
+\import{chapters/}{causes_abuse}
+
+\chapter{Human Moderation}
+\import{chapters/}{human_moderation}
+
+\chapter{Algorithmic Moderation}
+\import{chapters/}{algorithmic_moderation}
+
+\chapter{Models of Governance}
+\import{chapters/}{governance}
+
+\chapter{Scaling}
+\import{chapters/}{scaling}
+
+\chapter{Virality}
+\import{chapters/}{virality}
+
+\end{document}

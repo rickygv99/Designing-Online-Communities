@@ -1,0 +1,63 @@
+\documentclass[class=book, crop=false]{standalone}
+
+%% Image paths
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Sets epigraph style
+\usepackage{epigraph}
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
+%% Sets line style
+\linespread{1.3}
+
+%% Key term command
+\usepackage{marginnote}
+\providecommand{\keyterm}[1]{\textbf{#1}\marginnote{\scriptsize \textbf{#1}}}
+
+\begin{document}
+
+\epigraph{\itshape “‘Build it, and they will come’ only works in the movies. Social Media is a ‘build it, nurture it, engage them, and they may come and stay.’”}{---Seth Godin, \textit{sethgodin.com}}
+
+What is social computing? To put it bluntly, \keyterm{social computing}\index{social computing} is the design of digital communities. This includes a range of software applications: social media, community wikis, forums, blogs, content-sharing websites, online gaming, online dating, online auctions, review sites, question-answering sites, and so on. 
+
+Silicon Valley and start-up culture have overemphasized technological prowess and hacker culture as integral to the success of Internet companies. Mark Zuckerberg invented Facebook\index{Facebook} in his college dorm room while giving the middle finger to authority figures. What a programming god he must be!
+
+But Facebook didn’t succeed because Mark Zuckerberg was a little better at writing Perl scripts than his competitors. Facebook was far from the first social media company at the time. Large Internet companies like MySpace\index{MySpace} and Friendster, which had much more programming power than any college student could have, were already fighting for their shares of the social media market. Facebook succeeded because it was designed better. And I don’t mean it’s graphical design was better. By all accounts, MySpace had a superior graphical design than Facebook at the time. However, Facebook’s community was designed better. Take this excerpt from \textit{The Social Network} (2010)\footnote{The Social Network (2010) is one of my favorite movies of all time. The dialogue is absolutely stunning and the cinematography is gorgeous. If you haven’t watched it yet, stop reading and go watch it now.}, in which Mark Zuckerberg discusses the concept of what would later become Facebook with fellow Harvard students Tyler Winklevoss, Cameron Winklevoss and Divya Narendra:
+
+MARK: \textit{How’s it different from MySpace or Friendster?}
+
+TYLER: \textit{Harvard-dot-E-D-U.}
+
+And again:
+
+TYLER: \textit{The difference between what we’re talking about and MySpace or Friendster or any of those other social networking sites--}
+
+MARK: \textit{--is exclusivity.}
+
+Right from the beginning, Facebook\index{Facebook} was cultivating its community. When you design a social computing system, how you design and regulate your community is the most critical deciding factor of whether your system succeeds or fails. Sometimes this can be commercial. Facebook beat MySpace, Friendster and later Google+, becoming one of the largest existing tech companies and making Mark Zuckerberg one of the wealthiest people on the planet. Quora\index{Quora} and StackExchange\index{StackExchange} outpaced Yahoo Answers\index{Yahoo Answers} and became known for their high-quality user-generated answers whereas content from Yahoo Answers frequently appears on Buzzfeed listicles of dumbest things found on the Internet.
+
+When designing social computing systems, sometimes failure can have even darker consequences. Before it closed down in 2016, once-popular social media platform YikYak\index{YikYak} had become known for fostering extensive cyberbullying\index{cyberbullying}. Social media platform Gab\index{Gab} has become known for anti-Semitism and for providing a platform for the 2018 Pittsburgh synagogue shooter.
+
+The technical design of these competing digital communities are remarkably similar. However, some of them became extremely successful, some of them flopped, and some of them even became cesspools for the dark parts of humanity. The differentiating factor was how they designed their communities.
+
+In my freshman year at Stanford, I attended a talk by Charlie Cheever, one of the founders of question-answering site Quora\index{Quora}. He shared that in the early days of Quora, he and the other founder, Adam D’Angelo, would personally respond to any posted questions with well-researched and thought-out answers. This might seem like a small and symbolic gesture but in reality it was a game-changer for Quora. Cheever and D’Angelo had set a model for other users to follow.
+
+This is an example of a \keyterm{community norm}\index{norm} -- one of the things which can make or break your social community and which we will discuss in extensive detail in an upcoming chapter. Other users caught on to what was expected of their answers and followed suit. This led Quora to become known for providing high-quality answers and Quora became very successful.
+
+In this book, I will show why some digital communities succeed whereas others fail. Contrary to current trends in social computing literature, I will not discuss \keyterm{crowdsourcing}\index{crowdsourcing}. Crowdsourcing does not, I think, reasonably fall under the umbrella of social computing. Whereas social computing analyzes digital communities, crowdsourcing analyzes methods of getting lots of likely unconnected users to perform tasks for you.\footnote{Imagine I told a bunch of disconnected people to stand up from their computers and spin in a circle a hundred times (maybe so I could collect their biometric data or something). This is what crowdsourcing is. How on earth is this in any way related to designing an online community? These people do not know each other and likely never will. If this is considered a community now, then the definition of community has lost nearly all meaning and sociologists might as well give up on their field.} Crowdsourcing can underlie a social computing system as in the case of Uber; however, crowdsourcing is itself not a social computing system.
+
+This book is useful to anyone. Casual Internet users can learn social tricks to leverage different platforms and expand their online influence. Developers can learn what to do and what to avoid when designing the next Facebook. Researchers can learn what the current state of social computing is and what more still needs to be done.
+
+Now press that Subscribe button\footnote{Yes, I cringe too each time I read this. If you have a better idea for a conclusion, please let me know.} and continue along for the ride.
+
+\end{document}

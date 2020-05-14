@@ -39,6 +39,17 @@ Algorithmic moderation\index{moderation!algorithmic moderation} has some benefit
 
 However, algorithmic moderation has its drawbacks as well. Because there is no, or at least a reduced, human presence in deciding what constitutes an offense, sometimes algorithmic moderation can make mistakes. When users are punished despite not having committed an offense, they might become angry and spur others to become angry at the social system.
 
+Jiang, Ling and Eui-Hong Han. "ModBot: Automatic Comments Moderation." In Computation+ Journalism Symposium. 2019.\\
+* Used by The Washington Post. Employs NLP and machine learnign techniques to automatically moderate user's comments on news articles.
+
+Wulczyn, Ellery et al. "Ex Machina: Personal Attacks Seen at Scale." In Proceedings of the 26th International Conferenc on World Wide Web (WWW '17). International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, Switzerland, 1391-1399. 2017.\\
+* Machine learning classifier trained on human annotated data to identify personal attacks in online discussions on Wikipedia.
+
+Madrigal, Alexis. "Inside Facebook's Fast-Growing Content-Moderation Effort." 2018.\\
+* Hope that AI can replace the thousands of human moderators (both volunteers and paid workers).
+
+Gollatz, Kirsten et al. "The turn to artificial intelligence in governing communication online." 2018.
+
 \section{Introduction to machine learning}
 
 \section{Natural language processing}
@@ -89,7 +100,16 @@ capture groups
 
 \section{Automod}
 
+Deimorz (Submitter). "AutoModerator -- a bot for automatic straightforward reddit moderation tasks and improving upon the existing spam-filter : TheoryOfReddit". 2012.
+
+Automoderator. 2018. Automoderator -- reddit.com. https://www.reddit.com/wiki/automoderator
+
 Automod [Jhaver, Shagun et al. 2019]
+
+Morris, Kevin. "Reddit moderation being taken over by bots -- and that's a good thing." 2015.\\
+ * Moderators of many subreddits configure and manage the Automod tool as part of content regulation.
+
+https://www.reddit.com/r/AutoModerator/comments/1udcad/using_automoderator_a_tutorial_for_beginners/
 
 \section{Participatory method design}
 
@@ -126,6 +146,12 @@ Customer service bots
 
 Furthermore, algorithmic moderation\index{moderation!algorithmic moderation} often relies in large part on \keyterm{machine learning}\index{machine learning}, which relies on collecting data of offensive behaviors from its user-base. However, if the social system's users frequently report a minority's behaviors as offensive, despite the behaviors not actually being objectively offensive, then the social system's machine learning algorithms might learn that the minority's behaviors are offensive and therefore punishable. For example, anti-LGBTQ+ discrimination\index{discrimination} has in many cases tricked algorithmic moderation to unfairly target the LGBTQ+ community. One study found that algorithmic moderation was over twice as likely to flag tweets written in the African American English dialect [Sap et al. 2019].
 
+Farokhmanesh, Megan. 2018. "YouTube is still restricting and demonetizing LGBT videos -- and adding anti-LGBT ads to some."\\
+ * YouTube began labeling videos uploaded by transgender YouTubers as "sexually explicit", demonetizing them.
+
+Wright, Johanna. 2018. "Restricted Mode: How it works and what we can do better."\\
+ * YouTube apologized, stating "our system sometimes makes mistakes in understanding context and nuances."
+
 Algorithmic moderation\index{moderation!algorithmic moderation} has also proven to be susceptible to influence by malicious actors\index{troll}. In 2012, leaders of Mexico's Institional Revolutionary Party, the dominant party in Mexico, took advantage of a machine learning\index{machine learning} spam filter on Twitter\index{Twitter} to silence their opposition. When members of their opposition tweeted, the party members would tweet out thousands of identical tweets with the same hashtags. This caused Twitter's machine learning algorithm to associate the opposition's tweets with spam and block the tweets. [Urbina 2013]
 
 Algorithmic bias is a huge problem in machine learning, as machine learning algorithms that are poorly designed or trained on unrepresentative or racist, sexist, etc. datasets may behave in inappropriate ways. Sometimes, these algorithms can have real-world effects, with racist profiling, court verdicts and so on.
@@ -133,6 +159,8 @@ Algorithmic bias is a huge problem in machine learning, as machine learning algo
 For example, in 2016, it was found that LinkedIn had a tendency to autocorrect female names to male names, asking users if they meant to type "Andrew" instead of "Andrea" for example. To take other examples, it recommended "Daniel" instead of "Danielle", "Michael" instead of "Michaela" and "Alex" instead of "Alexa". Similar searches for male names found no instances where LinkedIn's algorithm recommended female names in place of male names. This is a good example of how algorithms which are trained on typical user actions can come to bias against minorities. As LinkedIn spokeswoman Suzi Owens said in response, "It's all based on how people are using the platform." [Day 2016]
 
 To take another example, company Northpointe developed a risk assessment algorithm, which was designed to receive data about criminal offenders and determine how at risk the offenders were of committing another crime in the future. The algorithm was shown to rate black offenders as significantly more high risk of committing a repeat crime in the future than white offenders. The bias of the algorithm is particularly horrifying because courts used the algorithm to help determine sentencing for criminal offenders. In short, black offenders tended to receive longer sentences than white offenders for committing the exact same crime! [Angwin et al. 2016]
+
+Blackwell, Lindsay et all. "Classification and Its Consequences for Online Harassment: Design Insights from HeartMob." PACMHCI 1, CSCW (2017), 24-1. 2017.
 
 \section{Invisible algorithms and transparency}
 
